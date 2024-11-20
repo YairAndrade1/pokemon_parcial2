@@ -11,7 +11,6 @@ export class PokemonListarComponent implements OnInit {
   pokemons : Array<PokemonDetailDto> = [];
   selectedPokemon!: PokemonDetailDto;
   selected:boolean=false;
-  pokemonDetalle!: PokemonDetailDto;
 
   getPokemons(): void{
     this.pokemons = this.service.getPokemons();
